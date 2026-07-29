@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment Summary - GPT Optimization</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        h1, h2 { color: #0056b3; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Assignment Summary Report</h1>
+    <p>Optimization of a small-scale GPT model under strict resource constraints.</p>
+    
+    <h2>Key Metrics</h2>
+    <table>
+        <tr><th>Metric</th><th>Target / Constraint</th><th>Achieved Value</th></tr>
+        <tr><td>Max Parameters</td><td>&lt; 2,000,000</td><td>~1,780,000</td></tr>
+        <tr><td>Optimizer Steps</td><td>&le; 2,000</td><td>2,000</td></tr>
+        <tr><td>Tokenizer Type</td><td>Byte-level (256 vocab)</td><td>Lossless UTF-8 Byte Tokenizer</td></tr>
+    </table>
+
+    <h2>Deliverables Check</h2>
+    <ul>
+        <li><strong>model.py / train.py</strong>: Upgraded with AdamW, Cosine Scheduling, and Weight Tying.</li>
+        <li><strong>ckpt.pt</strong>: Generated and saved successfully.</li>
+        <li><strong>RUNLOG.md &amp; NOTES.md</strong>: Compiled and documented.</li>
+    </ul>
+</body>
+</html>
