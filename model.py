@@ -103,7 +103,7 @@ class GPTLanguageModel(nn.Module):
 
         return logits, loss
 
-# Aliases for evaluation script compatibility
+
 GPT = GPTLanguageModel
 class Config:
     pass
